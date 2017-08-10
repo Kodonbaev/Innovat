@@ -1,5 +1,5 @@
 {
-  "name": "gulp-start-folder",
+  "name": "innovat",
   "version": "1.0.0",
   "description": "Start folder for gulp",
   "main": "index.js",
@@ -20,5 +20,14 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kodonbaev/Innovat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kodonbaev/Innovat/issues"
+  },
+  "homepage": "https://github.com/Kodonbaev/Innovat#readme"
 }

@@ -1,3 +1,202 @@
+@import mixin
+
 body
-	background: yellow
+	background: #fff
 	font-size: 16px
+	font-family: 'Open Sans', sans-serif
+.container
+	width: 100%
+	max-width: 758px
+	margin: 0 auto
+.header
+	@extend %clearfix
+	margin-bottom: 4px
+	h1
+		float: left
+		font:
+			family: calibri, sans-serif
+			size: 5.5em
+			weight: 300
+		color: #f4f4f4
+		margin: 0
+		line-height: 1.1
+	h2
+		float: left
+		width: 20%
+		margin: 18px 0 0 7px
+		color: #969696
+		font:
+			size: 2em
+			weight: 300
+		line-height: 1.1
+.main-menu
+	background: #484848
+	margin-bottom: 41px
+.menu__text
+	padding: 15px
+	a 
+		font-size: 14px
+		font-weight: bold
+		border-right: 1px solid #555555
+		padding: 15px 16px 14px
+		margin: 0 6px
+		color: #969696
+		text-decoration: none
+		&:hover
+			border-bottom: 2px solid #dbdbdb
+			color: #dbdbdb
+.content
+	@extend %clearfix
+.form-name
+	width: 70%
+	float: left
+	form
+		input
+			border: none
+			background: #f6f6f6
+			width: 87%
+			padding: 16px 0 13px 68px
+			margin: 10px 0 18px
+			border-radius: 5px
+			+placeholder
+				font-family: calibri, sans-serif
+				font-size: 18px
+				color: #6d747c
+.input-after
+	position: relative
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		top: 10px
+		left: 0
+		width: 48px
+		height: 46px
+		background:
+			color: #484848
+			image: url(../images/icon-man.png) 
+			position: center center
+			repeat: no-repeat
+		border-bottom-left-radius: 5px
+		border-top-left-radius: 5px
+.checkbox
+	width: 28%
+	float: left
+	position: relative
+	input
+		display: none
+		&:checked + label::after
+			content: ''
+			width: 20px
+			height: 20px
+			display: inline-block
+			position: absolute
+			top: 13px
+			left: 5px
+			background:
+				image: url(../images/icon-checkbox.png)
+				repeat: no-repeat 
+	label
+		display: block
+		margin: 15px 0 7px
+		padding-left: 33px
+		cursor: pointer
+		&::before
+			content: ''
+			width: 18px
+			height: 18px
+			display: inline-block
+			border: 1px solid #eeeeee
+			position: absolute
+			top: 17px
+			left: 2px
+.info
+	width: 65%
+	float: left
+	margin: 29px 0 0 4px
+	h2
+		color: #0793ff
+		font-size: 1.5em
+		font-weight: lighter
+	p 
+		color: #464646
+		font-size: 1.1em
+		line-height: 1.3
+		font-weight: lighter
+.img
+	width: 28%
+	float: left
+	margin: 59px 0 0 27px
+	padding: 10px 10px 2px
+	border: 1px solid #dedede
+	border-radius: 4px
+	img
+		width: 100%
+		height: auto
+.footer
+	background: #484848
+	margin-top: 60px
+	@extend %clearfix
+.footer-contact
+	width: 63%
+	float: left
+	h3
+		color: #fff
+		font-size: 1em
+		font-weight: normal
+		padding: 14px 0 14px
+		margin: 0
+	p
+		margin: 0
+		color: #d8d8d8
+		font-size: 0.8em
+		padding-bottom: 2px
+		a 
+			color: #d8d8d8
+			text-decoration: none
+.footer-social
+	width: 33%
+	float: left
+	h3
+		color: #fff
+		font-size: 1em
+		font-weight: normal
+		padding: 14px 0 9px
+		margin: 0
+.social
+	@extend %clearfix
+	&__item
+		width: 28%
+		float: left
+		background: #3c3c3c
+		border-radius: 5px
+		text-align: center
+		margin: 0 11px 0 0
+
+.icon
+	background: #2b2b2b
+	border-radius: 50%
+	display: inline-block
+	width: 41px
+	height: 41px
+	margin: 15px 0 9px
+	a 
+		text-decoration: none
+		span 
+			font-size: 1.1em
+			color: #fff
+			padding: 8px 13px 10px
+			font-weight: bold
+			display: inline-block
+	i 
+		font-size: 1.3em
+		color: #fff
+		padding: 11px 16px 10px
+.score
+	color: #fff
+	font-size: 0.8em
+	display: block
+.quantity
+	color: #fff
+	font-size: 0.6em
+	display: block
