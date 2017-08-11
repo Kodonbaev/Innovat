@@ -1,2 +1,2 @@
 # Innovat
-## https://kodonbaev.github.io/Innovat/.
+## https://kodonbaev.github.io/Innovat/app/.
