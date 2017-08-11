@@ -1,3 +1,88 @@
-extends layout
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic", rel="stylesheet")
+    link(rel="stylesheet", href="css/font-awesome.css")
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/style.css")
+    title= title
+  body
+    .container
+      .header
+        h1 TЗ
+        h2 Тестовое Задание
+    .main-menu
+      .container
+        .menu
+          .menu__icon
+            i(class="fa fa-bars", aria-hidden="true")
+          .menu__nav
+            a(href="#") Главная
+            a(href="#") Учеба
+            a(href="#") Карьера
+            a(href="#") Контакты
+    .container
+      .content
+        .form-name
+          form
+            .input-after
+              input(type="text", placeholder="Фамилия")
+            .input-after
+              input(type="text", placeholder="Имя")
+            .input-after
+              input(type="text", placeholder="Отчество")
+        .checkbox
+          input(type="checkbox", id="isready_1")
+          label(for="isready_1") HTML
+        .checkbox
+          input(type="checkbox", id="isready_2") 
+          label(for="isready_2") CSS
+        .checkbox
+          input(type="checkbox", id="isready_3")
+          label(for="isready_3") Less
+        .checkbox
+          input(type="checkbox", id="isready_4")
+          label(for="isready_4") jquery
+        .checkbox    
+          input(type="checkbox", id="isready_5") 
+          label(for="isready_5") Адаптивная верстка        
+        .info
+          h2 Немного о себе
+          p Можете немного рассказать о себе, нам это интересно. Может у Вас есть какие-либо увлечения в спорте, в музыке в поэзии. Или же Вы любитель тишины.
+          p А вдруг Вы умеете писать стихи, и вдруг это окажется плюсом для Вас...
+        .img
+          img(src="uploads/tz.jpg", width="200", heigth="206", alt="Man")
+    .footer
+      .container
+        .footer-contact
+          h3 Контакты:
+          p +996 707 878007
+          p 
+            a(href="#") aktilek.sof@gmail.com
+          p г. Бишкек, мкр. Достук д.7/2 кв.17
+        .footer-social
+          h3 Мы в социальных сетях:
+          .social
+            .social__item
+              .icon
+                a(href="#")
+                  i(class="fa fa-facebook",aria-hidden="true")
+              span.score 259
+              span.quantity тыс.
+            .social__item
+              .icon
+                a(href="#")
+                  i(class="fa fa-twitter",aria-hidden="true")
+              span.score 568
+              span.quantity тыс.
+            .social__item
+              .icon
+                a(href="#")
+                  span in
+              span.score 137
+              span.quantity тыс.
+
 
 
